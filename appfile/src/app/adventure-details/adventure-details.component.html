@@ -1,0 +1,39 @@
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th  id="accountkeyId">accountKey</th>
+            <th  id="parentaccountkeyId">parentAccountKey</th>
+            <th  id="accountcodealternatekeyId">accountCodeAlternateKey</th>
+            <th  id="parentaccountcodealternatekeyId">parentAccountCodeAlternateKey</th>
+            <th  id="accounthescriptionId">accounthescription</th>
+            <th  id="accounttypeId">accountType</th>
+            <th  id="operatorId">operator</th>
+            <th  id="custommembersId">customMembers</th>
+            <th  id="valuetypeId">valueType</th>
+            <th  id="custommemberoptionsId">customMemberOptions</th>
+            <th  id="custommemberoptionsId">Button</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let AdWork of AdWorkService.GetDimAccountList">
+            <td class="tdCaption" id="accountkeyId">{{AdWork.accountKey}}</td>
+            <td class="tdCaption" id="parentaccountkeyId">{{AdWork.parentAccountKey}}</td>
+            <td class="tdCaption" id="accountcodealternatekeyId">{{AdWork.accountCodeAlternateKey}}</td>
+            <td class="tdCaption" id="parentaccountcodealternatekeyId">{{AdWork.parentAccountCodeAlternateKey}}</td>
+            <td class="tdCaption" id="accountdescriptionId">{{AdWork.accountDescription}}</td>
+            <td class="tdCaption" id="accounttypeId">{{AdWork.accountType}}</td>
+            <td class="tdCaption" id="operatorId">{{AdWork.operator}}</td>
+            <td class="tdCaption" id="custommembersId">{{AdWork.customMembers}}</td>
+            <td class="tdCaption" id="valuetypeId">{{AdWork.valueType}}</td>
+            <td class="tdCaption" id="custommemberoptionsId">{{AdWork.customMemberOptions}}</td>
+            <td class="tdCaption">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                </button>
+                <a href="#">Edit</a>  
+                <a href="#">Delete</a>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
